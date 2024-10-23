@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(16, 187, 164, 0.897);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+.gallery{
+    flex-basis: 47%;
+    background: blueviolet;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.gallery img{
+    width: 100%;
+    display: rgb(8, 162, 201);
+    padding-top: 100px;
+}
+.details{
+    flex-basis: 53%;
+    background-color: aliceblue;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(51, 255, 0);
+}
+.details h1{
+    color: black;
+    font-size: 35px;
+}
+.details h2{
+    color: black;
+    font-size: 30px;
+}
+.details h3 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.details form{
+    font-size: 15px;
+    font-weight: 400;
+}
+.size-select{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.size-select p{
+    width: 70px;
+}
+.size-select input:checked + span{
+    color: rgb(0, 47, 255);
+    font-weight: 600;
+}
+.size-select input{
+    display: none;
+}
+.size-select span{
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.color p{
+    width: 75px;
+}
+.color span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.color-1{
+    background-color: red;
+}
+.color-2{
+    background-color: green;
+}
+.color-3{
+    background-color: yellow;
+}
+.color input{
+    display: none;
+}
+.color input:checked + span{
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px white, 0 0 0 6px black;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.quantity p{
+    width: 75px;
+}
+.quantity input{
+    background-color: gray;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+    border-radius: 12px;
+}
+form button{
+    background-color: blue;
+    color: white;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    margin-top: 50px;
+    box-shadow: 0px 10x 10px rgba(83, 63, 240, 0.25);
+    cursor: pointer;
+}
